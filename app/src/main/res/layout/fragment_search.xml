@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/f_search_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="９文字までの文字を入力してください\n同じ文字が二つ以上あった場合でも、それぞれ別の文字として単語を作成します"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/f_search_edit_multi"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="1"
+        android:maxLength="9"
+        android:ems="10"
+        />
+
+    <Button
+        android:id="@+id/f_search_button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="開始"
+         />
+
+    <TextView
+        android:id="@+id/f_search_text_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/f_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
